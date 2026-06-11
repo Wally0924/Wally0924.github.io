@@ -1,40 +1,57 @@
-# Wally 個人作品集網站
+<div align="center">
 
-一個單一檔案的靜態個人網站，深色科技風格，為求職用途設計。
-不需要安裝任何套件、不需要網路伺服器、不需要對外連線。
+# 👋 嗨，我是 Wally
 
-## 如何開啟
+**電腦視覺與深度學習工程師 | Computer Vision & Deep Learning Engineer**
 
-直接用瀏覽器打開 `index.html` 即可（雙擊檔案，或拖進 Chrome / Edge / Firefox）。
+🌐 **個人網站：[wally0924.github.io](https://wally0924.github.io)**
 
-如果想用本地伺服器的方式跑（非必要）：
+</div>
 
-```bash
-cd portfolio
-python3 -m http.server 8000
-# 然後開啟 http://localhost:8000
-```
+---
 
-## 功能
+## 🙋 關於我
 
-- **中英文切換**：右上角 `EN / 中文` 按鈕，方便給外商或本土公司看
-- **打字機效果**：首頁職稱輪播動畫
-- **精選專案**：四個代表性專案（WeatherSAM、車輛定位、GeoCLIP、推論服務）+ 四個其他專案，全部連回 GitHub
-- **離線可用**：大頭貼已以 base64 內嵌，完全離線也能正常顯示
-- **響應式設計**：手機、平板、桌面都能正常瀏覽
+就讀於**國立臺北科技大學（NTUT）**，專注於電腦視覺與自動駕駛感知系統。
+碩士研究主題是惡劣天氣下的語意分割——以 Meta 的 Segment Anything Model 為基礎，
+結合 CLIP 文字提示與 GeoCLIP 地理資訊，打造參數高效的分割框架 **WeatherSAM**。
 
-## 如何修改內容
+除了研究之外，我也重視工程落地：從模型訓練、TensorRT 加速到 FastAPI 服務部署，
+具備將研究成果轉化為可運行系統的完整經驗。
 
-所有內容都在 `index.html` 一個檔案裡：
+🔍 **目前正在尋找電腦視覺 / 深度學習 / AI 工程相關職缺。**
 
-| 想改什麼 | 搜尋關鍵字 |
+## 🛠️ 技術能力
+
+| 領域 | 技術 |
 |---|---|
-| 名字 | `<h1>Wally</h1>` |
-| 職稱輪播文字 | `phrasesZh` / `phrasesEn` |
-| 自我介紹 | `id="about"` 區塊 |
-| 技能標籤 | `id="skills"` 區塊的 `<span class="tag">` |
-| 專案說明 | `id="projects"` 區塊 |
-| Email | `wally092426@gmail.com` |
-| 主題色 | 最上方 CSS 的 `--accent: #4fd6c5` |
+| 深度學習與電腦視覺 | PyTorch、SAM / ViT、CLIP / GeoCLIP、YOLOv5 / v8、RT-DETR、CLRNet、YOLACT-Edge |
+| 模型部署與加速 | TensorRT、CUDA、TensorFlow Lite、模型量化、CMSIS-NN |
+| 後端與系統 | Python、FastAPI、REST API、Linux、Git、OpenStreetMap |
+| 行動裝置開發 | Kotlin、Android、Jetpack Compose、Firebase |
 
-中英文對照的寫法：`data-zh` 屬性的元素只在中文模式顯示，`data-en` 只在英文模式顯示。
+## 📌 精選專案
+
+- **[WeatherSAM — 惡劣天氣語意分割](https://github.com/Wally0924/SAM_research)**
+  基於 SAM（ViT-H）的參數高效語意分割框架，結合 CLIP 與 GeoCLIP 多模態提示，僅需訓練約 10–20% 參數
+- **[車道級車輛定位系統](https://github.com/Wally0924/Enhancing-Vehicle-Localization-Using-Lane-Detection-and-Geographic-Information)**
+  整合 CLRNet、YOLACT-Edge、YOLOv5 與 OpenStreetMap 地圖匹配，TensorRT 即時加速
+- **[GeoCLIP 影像地理定位](https://github.com/Wally0924/geoclip_use)**
+  影像 → GPS 座標預測，自建資料集微調與互動地圖視覺化
+- **[遠端 AI 模型推論服務](https://github.com/Wally0924/Server-Client)**
+  FastAPI 主從式架構，支援 RT-DETR / YOLOv8 模型熱抽換
+
+更多專案請見[個人網站](https://wally0924.github.io)或我的 [GitHub 倉庫列表](https://github.com/Wally0924?tab=repositories)。
+
+## 📫 聯絡方式
+
+- ✉️ Email：[wally092426@gmail.com](mailto:wally092426@gmail.com)
+- 💻 GitHub：[@Wally0924](https://github.com/Wally0924)
+
+---
+
+<div align="center">
+
+📖 想了解這個網站如何使用與修改，請參考 [網站使用說明](USAGE.md)
+
+</div>
